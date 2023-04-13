@@ -2,16 +2,12 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import colors from '../styles/colors';
 
-interface buttonProps {
-    title: string
-}
+import { Feather } from "@expo/vector-icons";
 
-export function Button({title} : buttonProps) {
+export function Button() {
     return (
         <TouchableOpacity style={styles.button} activeOpacity={0.7}>
-                <Text style={styles.buttonIcon}>
-                    {title}
-                </Text>
+            <Feather name='chevron-right' style={styles.buttonIcon} />
         </TouchableOpacity>
     )
 }
