@@ -14,7 +14,7 @@ import { Button } from "../components/button";
 export function Welcome() {
     return (
         <SafeAreaView style= {styles.container}>
-            <Text style={styles.wrapper}>
+            <View style={styles.wrapper}>
                 <Text style={styles.title}>
                 Gerencie {'\n'}
                 suas plantas de{'\n'}
@@ -26,7 +26,7 @@ export function Welcome() {
                     Nós cuidamos de lembrar você sempre que precisar.
                 </Text>
                 <Button/>
-            </Text>
+            </View>
             
         </SafeAreaView>
     )
