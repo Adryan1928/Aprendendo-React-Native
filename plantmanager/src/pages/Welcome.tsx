@@ -3,7 +3,7 @@ import {
     Text, View, Image, StyleSheet, TouchableOpacity, SafeAreaView, Dimensions 
 } from "react-native";
 
-import fonts from "../styles/fonts";
+// import fonts from "../styles/fonts";
 
 import wateringImg from '../assets/watering.png';
 import colors from "../styles/colors";
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: colors.heading,
         marginTop: 38,
-        fontFamily: fonts.heading,
+        // fontFamily: fonts.heading,
         lineHeight: 34
     },
     subtitle: {
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         paddingHorizontal: 20,
         color: colors.heading,
-        fontFamily: fonts.text
+        // fontFamily: fonts.text
     },    
     image: {       
         height: Dimensions.get('window').width * 0.7
