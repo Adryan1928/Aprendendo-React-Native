@@ -1,27 +1,27 @@
 import React from 'react'
 import {
-    View, Text, StyleSheet
+    View, Text, StyleSheet, TouchableOpacity, TouchableOpacityProps
 } from 'react-native'
 
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler'
 
 import colors from '../styles/colors';
 
-interface EnviromentButtonProps extends RectButtonProps {
+interface EnviromentButtonProps extends TouchableOpacityProps {
     title : string,
     active?: boolean
 }
 
 export function EnviromentButton ({title, active= false, ...rest} : EnviromentButtonProps) {
     return (
-        <RectButton
+        <TouchableOpacity
             style={[styles.container, active && styles.containerActive]}
             {...rest}
         >
             <Text style={[styles.text , active && styles.textActive]} >
                 {title}
             </Text>
-        </RectButton>
+        </TouchableOpacity>
     )
 }
 

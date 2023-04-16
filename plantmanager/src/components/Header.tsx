@@ -9,7 +9,7 @@ import colors from '../styles/colors';
 
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
-import IMG from '../../../../../../../Downloads/download.png'
+import Img from '../assets/watering.png'
 
 export function Header () {
     return (
@@ -18,7 +18,7 @@ export function Header () {
                 <Text style={styles.greeting} >Olá,</Text>
                 <Text style={styles.userName} >Adryan</Text>
             </View>
-            <Image style={styles.image} source={IMG} />
+            <Image style={styles.image} source={Img} />
         </View>
     )
 }
