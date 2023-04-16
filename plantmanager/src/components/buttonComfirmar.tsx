@@ -1,14 +1,21 @@
 import React from 'react';
 import { 
-    TouchableOpacity, Text, StyleSheet
+    TouchableOpacity, Text, StyleSheet, TouchableOpacityProps
 } from 'react-native';
 import colors from '../styles/colors';
 
-export function ButtonComfirmar () {
+
+interface buttonProps extends  TouchableOpacityProps {
+    title : string
+}
+
+export function ButtonComfirmar ( {title, ...rest} : buttonProps ) {
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container}
+            {...rest}
+        >
             <Text style={styles.text}>
-                Confirmar
+                { title }
             </Text>
         </TouchableOpacity>
     )

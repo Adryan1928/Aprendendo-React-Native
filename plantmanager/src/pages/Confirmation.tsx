@@ -26,7 +26,9 @@ export function Confimation () {
                 </Text>
 
                 <View style={styles.footer} >
-                    <ButtonComfirmar/>
+                    <ButtonComfirmar
+                        title='Começar'
+                    />
                 </View>
             </View>
         </SafeAreaView>

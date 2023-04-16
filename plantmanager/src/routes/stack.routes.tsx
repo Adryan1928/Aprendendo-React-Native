@@ -3,8 +3,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import colors from '../styles/colors';
 
 
-
-
 import { Welcome } from '../pages/Welcome';
 import { UserIdentification } from '../pages/UserIdentification';
 import { Confimation } from '../pages/Confirmation';
@@ -19,6 +17,7 @@ const AppRoutes: React.FC = () => {
                 contentStyle: {
                         backgroundColor: colors.white,
                     },
+                headerShown: false,
 
                 // cardStyle
             }}
@@ -34,7 +33,7 @@ const AppRoutes: React.FC = () => {
             />
 
             <StackRoutes.Screen 
-                name='Confimation'
+                name='Confirmation'
                 component={Confimation}
             />
 
