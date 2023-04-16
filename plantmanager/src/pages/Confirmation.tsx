@@ -7,8 +7,16 @@ import colors from '../styles/colors';
 
 // Componentes
 import { ButtonComfirmar } from '../components/buttonComfirmar';
+import { useNavigation } from '@react-navigation/native';
 
 export function Confimation () {
+    const navigation = useNavigation()
+
+
+    function handleMoveOn () {
+        navigation.navigate('PlantSelect' as never)
+    }
+
     return (
         <SafeAreaView style={styles.container} >
             <View style={styles.content} >
@@ -28,6 +36,7 @@ export function Confimation () {
                 <View style={styles.footer} >
                     <ButtonComfirmar
                         title='Começar'
+                        onPress={handleMoveOn}
                     />
                 </View>
             </View>
