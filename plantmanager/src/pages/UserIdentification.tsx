@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import  React ,{ useState } from 'react';
 import { 
-    Text, SafeAreaView, StyleSheet, View, TextInput, KeyboardAvoidingView, Platform, TouchableWithoutFeedback, Keyboard
+    Text, SafeAreaView, StyleSheet, View, TextInput, KeyboardAvoidingView, Platform, TouchableWithoutFeedback, Keyboard, Alert
 } from 'react-native';
+
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import colors from '../styles/colors';
 
 // Componentes
 import { ButtonComfirmar } from '../components/buttonComfirmar';
 import { useNavigation } from '@react-navigation/native';
+
 
 
 export function UserIdentification () {
@@ -31,7 +34,12 @@ export function UserIdentification () {
 
     const navigation = useNavigation()
 
-    function handleSubmit () {
+    async function handleSubmit () {
+        if (!name)
+            return Alert.alert('Me diz como chamar você :)')
+
+        await AsyncStorage.setItem('@plantmanager:user', name)
+
         navigation.navigate('Confirmation' as never)
     }
 
