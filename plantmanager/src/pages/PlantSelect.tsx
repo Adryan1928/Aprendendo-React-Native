@@ -26,18 +26,18 @@
 //     title : string
 // }
 
-interface PlantProps {
-        id: string,
-        name: string,
-        about: string,
-        water_tips: string,
-        photo: string,
-        environments: [string],
-        frequency: {
-          times: number,
-          repeat_every: string
-        }
-}
+// interface PlantProps {
+//         id: string,
+//         name: string,
+//         about: string,
+//         water_tips: string,
+//         photo: string,
+//         environments: [string],
+//         frequency: {
+//           times: number,
+//           repeat_every: string
+//         }
+// }
 
 // export function PlantSelect () {
 //     const [enviroments, setEnviroments] = useState<EnviromentProps[]>([])
@@ -218,6 +218,9 @@ import api from '../services/api';
 
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
+
+// libs
+import { PlantProps } from '../libs/storage';
 
 interface EnviromentProps {
     key: string;
