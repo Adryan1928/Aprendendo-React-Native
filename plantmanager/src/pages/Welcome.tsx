@@ -10,7 +10,6 @@ import colors from "../styles/colors";
 
 // Componentes >>
 import { Button } from "../components/button";
-import { useNavigation } from "@react-navigation/native";
 
 export function Welcome() {
     return (

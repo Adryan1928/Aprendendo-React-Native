@@ -43,7 +43,7 @@ export function UserIdentification () {
 
             navigation.navigate('Confirmation' as never, {
                 title: 'Prontinho',
-                subtitle: 'Agora vamos começar a cuidar das suas plantinhas com muito cuidado.',
+                subTitle: 'Agora vamos começar a cuidar das suas plantinhas com muito cuidado.',
                 buttonTitle: 'Começar',
                 icon: 'smile',
                 nextScreen: 'PlantSelect',

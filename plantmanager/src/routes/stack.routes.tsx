@@ -45,10 +45,10 @@ const AppRoutes: React.FC = () => {
                 component={PlantSelect}
             />
 
-            <StackRoutes.Screen
+            {/* <StackRoutes.Screen
                 name='PlantSave'
                 component={PlantSave}
-            />
+            /> */}
 
             <StackRoutes.Screen
                 name='MyPlants'
